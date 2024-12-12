@@ -19,7 +19,7 @@ pipeline {
                     def error_5xx = 'sudo grep " 5[0-9][0-9] " /var/log/apache2/access.log'
                     def arr = [error_4xx, error_5xx]
 
-                    for (int i = 0; i < arr.length; i++) {
+                    for (int i = 0; i < arr.size(); i++) {
                         try {
                             sh "${arr[i]}"
                             // echo 'Succeeded!'
