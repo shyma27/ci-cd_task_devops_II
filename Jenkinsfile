@@ -27,7 +27,8 @@ pipeline {
                             echo "Logs are absent for ${arr[i]}"
                         }
                     }
-            } 
+                } 
+            }
         }
     }
 }
